@@ -20,7 +20,26 @@
             <p data-identificador="Submensaje2">Hola, este es el segundo parrafo dentro del div</p>
             <p data-identificador="Submensaje3">Hola, este es el tercero parrafo dentro del div</p>
         </div>
+        
+        <br>
 
+        <div id="sumatoria">
+            <input type="number" name="primer_sumando" id="primer_sumando" value="1.55" max="10" min="0" step="0.01"/>
+            <input type="number" name="segundo_sumando" id="segundo_sumando" value="1.55" max="10" min="0" step="0.01"/>
+
+            <div id="resultado">
+                <button onclick="calcular('primer_sumando', 'segundo_sumando', 'salida');">Calcular</button>
+                <output id="salida"></output>
+            </div>
+        </div>
+
+        <button id="btn_crear_elemento" onclick="crearElemento();">Crear Imagenes</button>
+
+
+        <div id="lienzo">
+
+        </div>
+        
         <script src="js/scripts.js"></script>
     </body>
 </html>
